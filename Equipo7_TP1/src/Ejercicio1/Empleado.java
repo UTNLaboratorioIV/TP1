@@ -20,5 +20,37 @@ public class Empleado {
 		this.nombre = nombre;
 		this.edad = edad;
 	}
+	
+	// Getters and Setters
+	
+	public String getNombre() {
+		return nombre;
+	}
 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	//Metodo toString()
+	
+	@Override
+	public String toString() {
+		return "Empleado ID = " + id + ", Nombre = " + nombre + ", Edad = " + edad;
+	}
+
+	
+	
+	
 }
