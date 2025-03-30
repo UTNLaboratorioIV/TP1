@@ -4,7 +4,7 @@ public class Empleado {
 	
 	//atributos
 	private final int id;
-	private int proximoID = 1000;
+	private static int proximoID = 1000;
 	private String nombre;
 	private int edad;
 	
