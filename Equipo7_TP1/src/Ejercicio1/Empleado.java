@@ -4,7 +4,7 @@ public class Empleado {
 	
 	//atributos
 	private final int id;
-	private int proximoID = 1000;
+	private static int proximoID = 1000;
 	private String nombre;
 	private int edad;
 	
@@ -19,6 +19,38 @@ public class Empleado {
 		this.id = proximoID++;
 		this.nombre = nombre;
 		this.edad = edad;
+	}
+	
+	//métodos
+	public static  int devuelveProximoID() {
+		return proximoID++;
+	}
+
+	// Getters and Setters
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	//Metodo toString()
+	@Override
+	public String toString() {
+		return "Empleado ID = " + id + ", Nombre = " + nombre + ", Edad = " + edad;
 	}
 
 }
