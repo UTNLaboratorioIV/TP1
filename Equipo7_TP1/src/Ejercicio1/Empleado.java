@@ -21,8 +21,12 @@ public class Empleado {
 		this.edad = edad;
 	}
 	
+	//métodos
+	public static  int devuelveProximoID() {
+		return proximoID++;
+	}
+
 	// Getters and Setters
-	
 	public String getNombre() {
 		return nombre;
 	}
@@ -33,6 +37,16 @@ public class Empleado {
 
 	public int getEdad() {
 		return edad;
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	//Metodo toString()
+	@Override
+	public String toString() {
+		return "Empleado ID = " + id + ", Nombre = " + nombre + ", Edad = " + edad;
 	}
 
 	public void setEdad(int edad) {
