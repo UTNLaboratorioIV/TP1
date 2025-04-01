@@ -32,6 +32,9 @@ public class Principal {
 		System.out.println("El proximo ID a generarse es: " + Empleado.devuelveProximoID());
 	
 		/*
+    // Se comenta el codigo adicional para dejar unicamente lo que cumple con los enunciados solicitados por el ejercicio.
+    public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         String respuesta;
 
@@ -39,6 +42,7 @@ public class Principal {
             // Pedir datos al usuario
             System.out.print("Ingrese el nombre del empleado: ");
             String nombre = scanner.nextLine();
+
 
             System.out.print("Ingrese la edad del empleado: ");
             int edad = scanner.nextInt();
@@ -63,6 +67,5 @@ public class Principal {
         scanner.close();
         */
 		
-	}
-
+    }
 }

@@ -39,10 +39,6 @@ public class Empleado {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -53,4 +49,22 @@ public class Empleado {
 		return "Empleado ID = " + id + ", Nombre = " + nombre + ", Edad = " + edad;
 	}
 
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	//Metodo toString()
+	
+	@Override
+	public String toString() {
+		return "Empleado ID = " + id + ", Nombre = " + nombre + ", Edad = " + edad;
+	}
+
+	
+	
+	
 }
